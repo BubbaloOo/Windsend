@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model_E Manual</title>
+    <style>
+        body {
+            background-color: #111111;
+            color: #F0F0F0; /* Slightly brighter light gray for main text if needed */
+            font-family: 'Helvetica Neue', 'Segoe UI', Arial, sans-serif; /* Refined font stack */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 40px; /* Slightly more padding */
+            background-color: #181818; /* A tiny bit lighter than pure black for subtle depth */
+            border-bottom: 3px solid #FFCF02; /* Accent border */
+            width: 100%;
+            box-sizing: border-box;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3); /* Subtle shadow for header */
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2em; /* Slightly larger title */
+            color: #FFCF02;
+            font-weight: 500; /* Medium weight for elegance */
+            letter-spacing: 0.5px; /* Slight letter spacing */
+        }
+
+        .back-button {
+            background-color: #FFCF02;
+            color: #3D2B00; /* Dark, warm brown - much softer than black, harmonizes with yellow */
+            padding: 12px 25px; /* Increased padding for a more substantial button */
+            text-decoration: none;
+            font-weight: 600; /* Bolder for button text */
+            border-radius: 8px; /* More rounded corners */
+            font-size: 0.95em;
+            transition: background-color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+            box-shadow: 0 3px 7px rgba(0,0,0,0.25);
+            border: 1px solid #E6B800; /* Subtle border to define the button more */
+        }
+
+        .back-button:hover, .back-button:focus { /* Added focus state for accessibility */
+            background-color: #EAB900; /* Slightly more vibrant yellow on hover */
+            color: #2a1f00; /* Even darker brown on hover for contrast */
+            transform: translateY(-2px) scale(1.02); /* More noticeable lift and slight scale */
+            box-shadow: 0 5px 12px rgba(255, 207, 2, 0.2); /* Yellowish glow on hover */
+            outline: none; /* Remove default focus outline if custom styling is sufficient */
+        }
+
+        .pdf-container {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px; /* Consistent padding */
+            overflow: hidden;
+            box-sizing: border-box;
+            background: linear-gradient(180deg, #111111 0%, #1a1a1a 100%); /* Subtle gradient for depth */
+        }
+
+        .pdf-viewer {
+            width: 90%;
+            max-width: 1200px;
+            height: 100%; /* Adjusted to ensure it fits within padding */
+            border: 1px solid #444444; /* Slightly more prominent border */
+            box-shadow: 0px 0px 25px rgba(255, 207, 2, 0.15); /* Softer, more diffused yellow glow */
+            border-radius: 6px; /* Slight rounding of the PDF viewer edges */
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <a href="/Windsend/index.html" class="back-button">Back to Central Page</a>
+        <h1>Model_E Manual</h1>
+    </header>
+
+    <main class="pdf-container">
+        <embed class="pdf-viewer" src="/Manuals/pdfs/Model_E.pdf" type="application/pdf" />
+        </main>
+
+</body>
+</html>
