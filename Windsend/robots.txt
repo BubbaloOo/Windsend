@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /checkout/
+Allow: /
+Sitemap: https://windsend.vercel.app/sitemap.xml
